@@ -6,6 +6,20 @@ $(document).ready(function(){
   mirror: false,        // 스크롤 역방향에도 다시 실행 안함
 });
 
+$(".eyes .hide").hide();
+
+$(".eyes .show").click(function(){
+  $(".eyes .show").hide();
+  $(".eyes .hide").show();
+});
+
+$(".eyes .hide").click(function(){
+  $(".eyes .hide").hide();
+  $(".eyes .show").show();
+});
+
+
+
 });
 
 
@@ -48,6 +62,27 @@ document.addEventListener("DOMContentLoaded", function () {
       el.classList.remove("aos-animate");
     });
   }
+});
+
+//스크롤시 function들 색상 자동생성
+document.addEventListener("DOMContentLoaded", function () {
+  const section09 = document.querySelector('.section09');
+  const functionItems = document.querySelectorAll('.section09 .function li');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        functionItems.forEach(item => {
+          item.classList.add('active');
+        });
+        observer.unobserve(section09); 
+      }
+    });
+  }, {
+    threshold: 0.7 
+  });
+
+  observer.observe(section09);
 });
 
 

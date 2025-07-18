@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--파비콘-->
+  <link rel="icon" href="img/etc/favicon.ico">
+
+  <!--font-->
+  <link rel="stylesheet" href="css/font.css">
+
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!--swiper--> 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/login.css">
+
+  <!--script-->
+  <!--1.제이쿼리 2.자바스크립트 3.aos 4.외부js파일-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script defer src="js/main.js"></script>
+
+  <!--icon-->
+  <script src="https://kit.fontawesome.com/64f25849a2.js" crossorigin="anonymous"></script>
+  <title>login</title>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="login-logo"><img src="img/etc/login-logo.png" alt="로그인로고이미지"></div>
+    </header>
+
+    <form>
+      <ul class="login-from">
+        <li>
+          <p class="tit">아이디</p>
+          <div class="input"><input type="text" placeholder="abc123@gmail.com"></div>
+        </li>
+
+        <li>
+          <p class="tit">비밀번호</p>
+          <div class="input">
+            <input type="text" placeholder="영문,숫자,특수문자 포함 8자 이상">
+            <div class="eyes">
+              <div class="hide"><i class="fa-solid fa-eye"></i></div>
+              <div class="show"><i class="fa-solid fa-eye-slash"></i></div>
+            </div><!--.eyes-->
+            
+          </div>
+        </li>
+      </ul>
+
+      <div class="login-btn"><a href="index.html">로그인</a></div>
+
+      <ul class="sign-up">
+        <li>
+          <label class="custom-checkbox">
+            <input type="checkbox" name="auto">
+            <span class="checkmark"></span>
+            자동로그인
+          </label>
+        </li>
+
+        <li>
+          <ul>
+            <li><a href="#">계정찾기</a></li>
+            <li><a href="signup.html">회원가입</a></li>
+          </ul>
+        </li>
+      </ul>
+    </form>
+    
+
+  </div><!--#wrap-->
+</body>
+</html>

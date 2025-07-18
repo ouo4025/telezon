@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--파비콘-->
+  <link rel="icon" href="img/etc/favicon.ico">
+
+  <!--font-->
+  <link rel="stylesheet" href="css/font.css">
+
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!--swiper--> 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/login.css">
+
+  <!--script-->
+  <!--1.제이쿼리 2.자바스크립트 3.aos 4.외부js파일-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script defer src="js/main.js"></script>
+
+  <!--icon-->
+  <script src="https://kit.fontawesome.com/64f25849a2.js" crossorigin="anonymous"></script>
+  <title>signup</title>
+</head>
+<body>
+  <div id="signup_wrap">
+    <header>
+      <h1>회원가입</h1>
+    </header>
+
+    <form>
+      <ul class="signup-form">
+        <li>
+          <p class="tit">아이디</p>
+          <div class="input">
+            <input type="text" placeholder="abc123@gmail.com">
+            <button class="btn">중복확인</button>
+          </div>
+        </li>
+
+        <li>
+          <ul class="password">
+            <li>
+              <p class="tit">비밀번호</p>
+              <div class="input">
+                <input type="text">
+                <div class="eyes">
+                  <div class="hide"><i class="fa-solid fa-eye"></i></div>
+                  <div class="show"><i class="fa-solid fa-eye-slash"></i></div>
+                </div><!--.eyes-->
+             </div><!--.input-->
+            </li>
+
+            <li>
+              <p class="tit">비밀번호 확인</p>
+              <div class="input" placeholder="영문, 숫자, 특수문자 포함 8자 이상">
+                <input type="text">
+                <div class="eyes">
+                  <div class="hide"><i class="fa-solid fa-eye"></i></div>
+                  <div class="show"><i class="fa-solid fa-eye-slash"></i></div>
+                </div><!--.eyes-->
+             </div><!--.input-->
+            </li>
+          </ul><!--.password-->
+        </li>
+
+        <li>
+          <ul class="depart">
+            <li>
+              <p class="tit">소속</p>
+              <div class="input">
+                <input type="text" placeholder="인사총무팀">
+             </div><!--.input-->
+            </li>
+
+        <li>
+              <p class="tit">직급</p>
+              <div class="input">
+                <input type="text" placeholder="사원">
+             </div><!--.input-->
+            </li>
+          </ul><!--.password-->
+        </li>
+
+        <li>
+          <p class="tit">이름</p>
+          <div class="input">
+            <input type="text" placeholder="실명을 입력해주세요.">
+          </div>
+        </li>
+
+        <li class="number">
+          <p class="tit">휴대전화번호</p>
+          <div class="input number01">
+            <input type="text" placeholder="'-' 제외">
+            <button class="btn">인증전송</button>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="인증번호를 입력해주세요.">
+          </div>
+        </li>
+
+        <li>
+          <ul class="user-info">
+            <li>
+              <p class="tit">생년월일</p>
+              <div class="input">
+                <input type="text" placeholder="19950710">
+              </div>
+            </li>
+
+            <li>
+              <ul class="gender">
+                <li class="woman"><input type="radio" id="option1" name="gender" value="1">
+              <label for="option1">여성</label></li>
+                <li class="man"><input type="radio" id="option2" name="gender" value="2">
+              <label for="option2">남성</label></li>
+              </ul>             
+            </li>
+          </ul><!--.user-info-->
+        </li>
+      </ul><!--.signup-form-->
+    </form>
+
+    <div class="login-btn"><a href="index.html">회원가입</a></div>
+  </div><!--#wrap-->
+
+</body>
+</html>
